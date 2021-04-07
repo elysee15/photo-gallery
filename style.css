@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mada", sans-serif;
+}
+
+header {
+  background-color: #f1f7f5;
+  background-image: url(./img/hero.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h3 {
+  font-family: "Mada", sans-serif;
+  font-weight: 700;
+}
+
+small {
+  color: #727272;
+}
+
+.nav-item {
+  padding: 0 2rem;
+}
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  gap: 1rem;
+}
+
+div.gallery > * {
+  border-radius: 20px;
+  max-width: 100%;
+  width: 100%;
+  /* justify-content: space-between; */
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #272727;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 0.7rem solid #fff;
+  padding: 0 !important;
+  flex-grow: 1 !important;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+  transition: filter ease 500ms;
+  cursor: pointer;
+}
+
+img:hover {
+  filter: grayscale(0);
+} */
